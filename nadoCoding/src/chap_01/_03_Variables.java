@@ -25,6 +25,9 @@ public class _03_Variables {
         System.out.println(name + "님 , 배송이 시작됩니다 . "+ hour +"시에 방문예정입니다");
         System.out.println(name + "님 배송이 완료되었습니다");
 
+        boolean pass =true;
+        System.out.println("이번시험에 합격했을까요?"+pass);
+
 
 
 
