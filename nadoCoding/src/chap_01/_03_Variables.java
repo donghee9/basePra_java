@@ -18,18 +18,18 @@ public class _03_Variables {
         // 딱 한글자만 표현 할때는 char
         char grade = 'A';
 
-        System.out.println(name + "의 평균점수는" + score +"점 입니다");
-        System.out.println("학점은 "+ grade + "입니다.");
+        System.out.println(name + "의 평균점수는" + score + "점 입니다");
+        System.out.println("학점은 " + grade + "입니다.");
 
-        System.out.println(name + "님 , 배송이 시작됩니다 . "+ hour +"시에 방문예정입니다");
+        System.out.println(name + "님 , 배송이 시작됩니다 . " + hour + "시에 방문예정입니다");
         System.out.println(name + "님 배송이 완료되었습니다");
 
-        boolean pass =true;
-        System.out.println("이번시험에 합격했을까요?"+pass);
+        boolean pass = true;
+        System.out.println("이번시험에 합격했을까요?" + pass);
 
         // double 보다는 정밀도가 떨어지지만 , float 도 실수를 표현할 수 있음
         double d = 3.14;
-        float f =3.14F; // 실수는 기본적으로 double 로 간주 하기 때문에 뒤에 f 를 붙여야함
+        float f = 3.14F; // 실수는 기본적으로 double 로 간주 하기 때문에 뒤에 f 를 붙여야함
         // 사용 용도
         // float: 메모리 공간이 중요한 상황에서 사용됩니다. 4바이트 소수점 7자리
         // 주로 그래픽 처리, 게임 개발, 임베디드 시스템 등에서 자주 사용됩니다. 정밀도가 약간 떨어지더라도 메모리 사용을 줄여야 하는 경우에 적합합니다.
@@ -40,13 +40,13 @@ public class _03_Variables {
         // 정수 리터럴 은 기본적으로 int 로 간주함 그래서 long 을 나타낼때 L 을 붙여야함
         int i = 31;
         long l = 100000000000L;
-        l =100_000_000_000L;
+        l = 100_000_000_000L;
         System.out.println(l);
         // int : 4바이트(32비트) 값의 범위는 -2,147,483,648부터 2,147,483,647까지입니다.(21억)
         // long : 8바이트 (64비트)  값의 범위는 **-9,223,372,036,854,775,808**부터 **9,223,372,036,854,775,807**까지입니다.
 
-        // int , long , float , double , String , boolean
-        // 적합한 자료형을 찾는 것이 중요함
+        // int , long , float , double , char, String , boolean
+        // 적합한 자료형을 찾는 것이 중요함 => 공간이 낭비 되기 때문에
 
     }
 }

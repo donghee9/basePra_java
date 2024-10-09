@@ -10,6 +10,6 @@ public class _02_DataTypes {
         System.out.println(3.14);
         System.out.println(true);
         System.out.println(false);
-        System.out.println(123+234);
+        System.out.println(123 + 234);
     }
 }
