@@ -26,7 +26,6 @@ public class _03_StringCompare {
         s2 = new String("1234"); // d
 
         // c , d 가 참조하는 곳이 다름
-
         System.out.println(s1 == s2);  // (참조하고 있는 곳을 비교하는 것)
         System.out.println(s1.equals(s2));// (내용을 비교하는것)
 
