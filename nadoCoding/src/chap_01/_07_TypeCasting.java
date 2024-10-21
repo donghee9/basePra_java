@@ -46,8 +46,44 @@ public class _07_TypeCasting {
         float score_F = 23.22F;
         double score_D = 23.22;
 
-        System.out.println((int)score_D);
-        System.out.println((int)score_F);
+        System.out.println((int) score_D);
+        System.out.println((int) score_F);
+
+        // 정수 + 실수 연산
+
+        // score = 93 + 98.8 ;
+        score = 93 + (int) 98.8;
+        System.out.println(score);
+
+        score_D = 93 + 98.8;
+        System.out.println(score_D);
+
+        // 변수의 형변환된 데이터 집어 넣기
+        double convertScoreDouble = score; // 191 -> 191.0 으로 자동으로 형변환이 됌
+        // int -> long -> float -> double (작은 범위에서 큰범위는 자동으로 형변환)
+
+        // int convertScoreInt = score_D; (큰 범위의 데이터가 작은 범위에 다 담기지 않아서 짤린다)
+        int convertScoreInt = (int) score_D;
+        // double -> float -> long -> int  (큰범위에서 작은 범위는 데이터가 짤림 형 변환을 수동으로 해줘야함)
+
+
+        // 숫자를 문자열로 바꾸는 것
+        String s1 = String.valueOf(93); // String 클래스를 써야함
+        s1 = Integer.toString(93); // Integer 클래스를 쓰는 법
+        // String 이라는 클래스가 제공하는 valueOf 라는 기능을 사용해서 문자열로 바꿔 준다고 생각하면 됌
+
+        System.out.println(s1);
+
+        String s2 = String.valueOf(98.8); // String 클래스를 쓰는법
+        s2 =Double.toString(98.8);  // Double 클래스를 쓰는법
+        System.out.println(s2);
+
+        // 문자열을 숫자로
+        int i = Integer.parseInt("93");
+        System.out.println(i);
+
+        double d = Double.parseDouble("98.8");
+        System.out.println(d);
 
 
 
